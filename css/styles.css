@@ -1,3 +1,31 @@
 /* MTM1544 Week 1: your stylesheet.
    This file is already linked from index.html. Write your rules below.
    Start by changing the body background colour and saving, to confirm the link works. */
+   /* change the background colour to lightblue to confirm css is working */
+body {
+   background-color: lightblue;
+}
+/* style every paragraph with a color and a line height */
+ p {
+   color: black;
+   line-height: 2;
+}
+/* style all h1 and h2 headings using one rule */
+h1, h2 {
+   color: green;
+   font-family: Arial, sans-serif;
+}
+/* style the introduction paragraph differently from other paragraphs */
+.intro {
+   color:blue;
+   font-style: italic;
+   font-size: 1.5em;
+}
+/* give the summit climb heading a special color */
+#summit {
+   color: red;
+}
+/* test the css cascading by changing all h1 and h2 headings to another color */
+h1, h2 {
+   color: purple;
+}

@@ -1,9 +1,13 @@
+*{
+   box-sizing: border-box;
+}
+
 /* MTM1544 Week 1: your stylesheet.
    This file is already linked from index.html. Write your rules below.
    Start by changing the body background colour and saving, to confirm the link works. */
    /* change the background colour to lightblue to confirm css is working */
 body {
-   background-color: lightblue;
+   background-color: yellow;
 }
 /* style every paragraph with a color and a line height */
  p {
@@ -29,3 +33,25 @@ h1, h2 {
 h1, h2 {
    color: purple;
 }
+.card-test{
+width: 600px;
+background-color:lightblue;
+border: 3px solid black;
+padding: 30px;
+border-radius: 12px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 40px;
+}
+.first {
+   margin-bottom: 30px;
+}
+   .second {
+      margin-top: 50px;
+}
+.media {
+   
+      width: 100%;
+      aspect-ratio: 16/9;
+      background-color: lightgrey;
+   }

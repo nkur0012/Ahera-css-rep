@@ -1,38 +1,48 @@
-*{
-   box-sizing: border-box;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* MTM1544 Week 1: your stylesheet.
    This file is already linked from index.html. Write your rules below.
    Start by changing the body background colour and saving, to confirm the link works. */
    /* change the background colour to lightblue to confirm css is working */
 body {
-   background-color: yellow;
+   background-color: var(--color-1);
+    /* this is week 3 assignment typographic baseline */
+   font-family: Roboto, Arial, Helvetica, sans-serif;
+   font-size: 1rem;
+   line-height: 1.6;
+   color: #263238;
 }
 /* style every paragraph with a color and a line height */
  p {
-   color: black;
+   color: var(--color-4);
    line-height: 2;
 }
 /* style all h1 and h2 headings using one rule */
 h1, h2 {
-   color: green;
-   font-family: Arial, sans-serif;
+   color: var(--color-4);
+   font-family: Arial, helvetica, sans-serif;
+   text-wrap: balance;
+   
+}
+h1 {
+   font-size: 2.5rem;
+}
+h2 {
+   font-size: 2rem;
 }
 /* style the introduction paragraph differently from other paragraphs */
 .intro {
-   color:blue;
+   color:var(--color-4);
    font-style: italic;
-   font-size: 1.5em;
+   font-size: 1.5rem;
 }
 /* give the summit climb heading a special color */
 #summit {
-   color: red;
+   color: var(--color-4);
 }
-/* test the css cascading by changing all h1 and h2 headings to another color */
-h1, h2 {
-   color: purple;
-}
+
+
 .card-test{
 width: 600px;
 background-color:lightblue;
@@ -55,3 +65,20 @@ margin-bottom: 40px;
       aspect-ratio: 16/9;
       background-color: lightgrey;
    }
+  /* week 3 four-step color palette*/
+  :root {
+   /* lightest color */
+   --color-1: hsl(120, 40%, 90%);
+   /* light color */
+   --color-2: hsl(120, 40%, 75%);
+   /* medium color */
+   --color-3: oklch(0.65 0.12 145);
+   /* darkest color */
+   --color-4: oklch(0.45 0.12 145);
+  }
+
+   
+/* week 3 color mix hover state*/
+a:hover {
+   color: color-mix(in oklch, var(--color-4),white 30%);
+}

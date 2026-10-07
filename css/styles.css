@@ -78,7 +78,56 @@ margin-bottom: 40px;
   }
 
    
-/* week 3 color mix hover state*/
+/* week 4 color mix hover state*/
+
+/* week 4 interactivestate*/
 a:hover {
-   color: color-mix(in oklch, var(--color-4),white 30%);
+   color:  color-mix(in oklch,var(--color-3),black 30%);
+   text-decoration: underline;
 }
+/* every link has a clear keyboard focus state */
+a:focus {
+   outline: 3px solid var(--color-4);
+   outline-offset: 3px;
+}
+/*structural selectors */
+
+/*striped odd odd numbered list without adding html classes */
+ul li:nth-child(odd) {
+   background-color: var(--color-2);
+}
+/*the first list item is visually distincted */
+ul li:first-child {
+   background-color: var(--color-3);
+    font-weight: 700;
+
+}
+/* decolative pseudo element */
+/*the arrow is decolative only, so screen reader do not have to anounce it */
+h2::before {
+   content: " --> ";
+
+}
+/* specificity experiment */
+/*the ID selector should win because it has higher specificity
+ than the class selector and the element selector*/
+ p{color:red;}
+   .specificity-test{color:blue;}
+
+      #specificity-test{color:green;
+      }
+   
+/*class only specificity*/
+.test-one{color:red;
+}
+.test-two{color:blue;
+}
+.test-three{color:green;
+}
+/*where()rewrite*/
+:where(h2,h3,h4){text-wrap:balance;
+}
+
+
+
+

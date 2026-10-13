@@ -109,7 +109,7 @@ h2::before {
 
 }
 /* specificity experiment */
-/*the ID selector should win because it has higher specificity
+/*prediction:the ID selector should win because it has higher specificity
  than the class selector and the element selector*/
  p{color:red;}
    .specificity-test{color:blue;}

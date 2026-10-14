@@ -125,9 +125,51 @@ h2::before {
 .test-three{color:green;
 }
 /*where()rewrite*/
-:where(h2,h3,h4){text-wrap:balance;
+:where(h2,h3,h4){text-wrap:balance;}
+   /*week 5*/
+   /*flex navigation bars*/
+   .site-header  {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+   }
+.nav-links{
+   display: flex;
+   gap: 20px;}
+/*wrapping row of cards*/
+.card-container{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+.card{
+   flex: 1 1 220px;
+   padding: 20px;
+   border-radius: 8px;
+   border: 1px solid black;
+}
+/*hover and keyboard radius*/
+.nav-links a:hover, .nav-links a:focus {
+   background-color: green;
+   outline: 4px solid green;
 }
 
-
-
-
+.card:hover {
+      background-color: lightblue;}
+  .card:focus-within {
+   outline: 3px solid green;
+}
+/*center an element horizontally and vertically*/
+.center-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 200px;
+   border: 2px solid green;
+}
+.center-item {
+   background-color: lightblue;
+   padding: 20px;
+   
+}

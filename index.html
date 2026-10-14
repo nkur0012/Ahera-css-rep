@@ -8,28 +8,25 @@
 </head>
 <body>
 
-  <header>
+  <header class="site-header">
    <h1>Mountain Trail Guide</h1>
-  </header>
-  <nav aria-label="Main navigation">
-    <ul>
-      <li><a href="about.html">About this page</a></li>
-      <li><a href="#summit">jump to summit climb</a></li>
-    </ul>
-  </nav>
-
-  <main>
+  
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About this page</a>
+    <a href="#summit">jump to summit climb</a>
+     </nav>
+     </header>
+<main>
     <article>
-
-
-    <h2>Welcome to the Mountain Trail Guide</h2>
+  <h2>Welcome to the Mountain Trail Guide</h2>
   <p class="intro">Three routes, from an easy lakeside loop to a steep summit climb. Pick the one
     that matches the day you have, not the day you wish you had.</p>
-    <section class="card-test">
 
-  <h2>Lakeside Loop</h2>
-
-  <p class="first paragraph">Four kilometres, almost flat, and the surface stays firm after rain. Most people walk it in
+    <div class="card-container">
+      <section class="card">
+        <h2>Lakeside Loop</h2>
+       <p class="first paragraph">Four kilometres, almost flat, and the surface stays firm after rain. Most people walk it in
     about an hour. It is the only route here that works with a stroller.</p>
 
   <p class="second paragraph">The trailhead is signed from the main parking area. Water is available at the picnic shelter
@@ -43,7 +40,7 @@
 
     </section>
 
-<section >
+<section class="card">
   <h2>Ridge Traverse</h2>
 
 
@@ -53,7 +50,7 @@
   <p>The footing turns to loose rock for the last kilometre. Boots are worth it here, and the wind
     on the exposed section is colder than the forecast suggests.</p></section>
 
-  <section>
+  <section class="card">
 
   <h2 id="summit">Summit Climb</h2>
 
@@ -63,7 +60,7 @@
   <p>Start early. The trail is unshaded above the treeline and there is no water past the second
     creek crossing, so carry everything you need from the bottom.</p> </section>
 
-<section>
+<section class="card">
   <h2>Before You Go</h2>
 
   <p>Tell someone your route and when you expect to be back. Cell coverage is unreliable in the
@@ -73,6 +70,13 @@
     you commit to the longer routes.</p> </section>
 
   </article>
+  <section>
+    <h2>flexbox centering test</h2>
+    <div class="center-container">
+      <div class="center-item">I am centered</div>
+    </div>
+    </section>
+      
 
     </main>
 
